@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000 url(fon.png); /* Фоновый цвет и фоновый рисунок*/
+		background-attachment: fixed; /* Фон страницы фиксируется */
+		background-repeat: repeat-x;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header__avatar {
+  border-radius: 100px;
+   border: 3px solid transparent;
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+.header__avatar:hover {
+  border: 3px solid #FFD700;
+}
+
+header h1 {
+    font-family: 'Impact', sans-serif;
+    font-size: 48px;
+    margin: 0;
+    color: #f8d300;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 24px;
+    color: #f8d300;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contact, .about {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact h2, .about h2 {
+    font-size: 36px;
+    margin-top: 0;
+    color: #f8d300;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contact p, .about p {
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
